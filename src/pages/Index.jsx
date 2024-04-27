@@ -29,6 +29,7 @@ const Index = () => {
           placeholder="Add a new task..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          onKeyPress={(e) => { if (e.key === 'Enter') handleAddTodo(); }}
           size="lg"
           width="300px"
         />
